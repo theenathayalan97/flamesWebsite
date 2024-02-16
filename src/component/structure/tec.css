@@ -1,0 +1,64 @@
+.App{
+    margin: 0;
+}
+.final{
+    width: 100%;
+    height: 100vh;
+}
+
+.collection {
+    display: grid;
+    grid-template-columns: auto;
+    height: 100vh;
+}
+
+.image_arrange {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.bg-img {
+    /* position: relative; */
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+.player{
+    position: absolute;
+    margin-left: 15%;
+    width: 70% !important;
+    height: 70vh !important;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    z-index: 1;
+}
+
+iframe {
+    /* border: 0; */
+    border-radius: 20px;
+}
+
+.heading{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 5%;
+}
+
+.rainbow-text {
+    /* height: 98vh; */
+    bottom: 100px;
+    position: absolute;
+    width: 100%;
+    /* color: red; */
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   -webkit-background-clip: text;
+  color: transparent;
+    /* -webkit-background-clip: text; */
+}
