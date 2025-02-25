@@ -4,7 +4,16 @@ import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 
 import './tec.css'
-const VIDEO_PATH = 'https://youtube.com/shorts/vbFhrmGt5cs?si=xR6dRs5PtWLoGXpm';
+const VIDEO_PATH = ['https://youtube.com/shorts/vbFhrmGt5cs?si=xR6dRs5PtWLoGXpm',
+    'https://www.youtube.com/watch?v=8U8alWzORuM',
+    'https://www.youtube.com/watch?v=PXEhyH-jxgU',
+    'https://www.youtube.com/watch?v=FaR1paTYmEY',
+]
+
+
+const getRandomVideo = () => VIDEO_PATH[Math.floor(Math.random() * VIDEO_PATH.length)];
+
+
 function Affection() {
     const { width, height } = useWindowSize();
     const playerRef = useRef(null);
@@ -23,7 +32,7 @@ function Affection() {
                     src="https://annapimenta.pl/wp-content/uploads/2019/09/Where_to_buy_an_engagement_ring_in_Cracow_photographer_surprise_proposal-9-1000x550.jpg"
                 />
                 <div className='collection'>
-                    <ReactPlayer className='player' ref={playerRef} url={VIDEO_PATH} controls={true} />
+                    <ReactPlayer className='player' ref={playerRef} url={getRandomVideo()} controls={true} />
                     <div className='heading'>
                     <h2 class="rainbow-text">{message}</h2>
                     </div>

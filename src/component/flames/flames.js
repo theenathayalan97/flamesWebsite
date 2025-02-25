@@ -113,14 +113,14 @@ function Flames() {
             <MDBInput placeholder='partner name' id='form2' type='text' required />
             <p id='partner_required'>partner name required</p>
 
-            <div className="text-center pt-1 mb-5 pb-1">
+             <div className="text-center pt-1 mb-5 pb-1">
               {/* <MDBBtn >Sign in</MDBBtn> */}
               <Button className="mb-1 w-100 gradient-custom-2 signup" variant="primary" onClick={flamesSubmit}>submit</Button>
-              <a className="text-muted" href="#!">Forgot password?</a>
-            </div>
+              <a className="text-muted" href="#!">Change the partner?</a> 
+            </div>  
 
             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
-              <p className="mb-0">Don't have an account?</p>
+              <p className="mb-0">Don't have an affaire?</p>
               <button className="mb-1 w-80 gradient-custom-2 mx-2" color='danger'>
                 Danger
               </button>
@@ -134,10 +134,14 @@ function Flames() {
           <div className="d-flex flex-column  justify-content-center gradient-custom-2 h-100 mb-4">
 
             <div className="text-white px-3 py-4 p-md-5 mx-md-4">
-              <h4 class="mb-4">We are more than just a company</h4>
-              <p class="small mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              <h3 class="mb-6">What is flames</h3>
+              <p class="small mb-0">FLAMES is a fun and nostalgic relationship compatibility 
+                game often played by teenagers. The name stands for Friendship, Love, Affection, 
+                Marriage, Enemy, and Sibling. The game involves taking two names, eliminating 
+                common letters, and counting the remaining ones to determine the relationship outcome. 
+                While FLAMES is not scientifically accurate, it has been a popular pastime for years, 
+                bringing excitement and curiosity to friendships and crushes. Despite its playful nature, 
+                the game remains a charming reminder of how simple things can bring joy and laughter.
               </p>
             </div>
 

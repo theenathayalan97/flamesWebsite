@@ -4,7 +4,16 @@ import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 
 import './tec.css'
-const VIDEO_PATH = 'https://www.youtube.com/watch?v=24uQH4ByMsg&list=PLJICwt4_3429YL0hhj5D_qB77cigmzCYE&index=2';
+const VIDEO_PATH = [
+    'https://www.youtube.com/watch?v=24uQH4ByMsg&list=PLJICwt4_3429YL0hhj5D_qB77cigmzCYE&index=2',
+    'https://www.youtube.com/watch?v=9HHMVB7B_0c',
+    'https://www.youtube.com/watch?v=gKwVa3Gh9ZQ',
+    'https://www.youtube.com/watch?v=x1QCgop1WvI'
+
+]
+
+const getRandomVideo = () => VIDEO_PATH[Math.floor(Math.random() * VIDEO_PATH.length)];
+
 function Lover() {
     const { width, height } = useWindowSize();
     const playerRef = useRef(null);
@@ -23,7 +32,7 @@ function Lover() {
                     src="https://annapimenta.pl/wp-content/uploads/2019/09/Where_to_buy_an_engagement_ring_in_Cracow_photographer_surprise_proposal-9-1000x550.jpg"
                 />
                 <div className='collection'>
-                    <ReactPlayer className='player' ref={playerRef} url={VIDEO_PATH} controls={true} />
+                    <ReactPlayer className='player' ref={playerRef} url={getRandomVideo()} controls={true} />
                     <div className='heading'>
                     <h2 class="rainbow-text">{message}</h2>
                     </div>

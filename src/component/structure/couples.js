@@ -4,8 +4,14 @@ import Confetti from "react-confetti";
 import useWindowSize from "react-use/lib/useWindowSize";
 
 import './tec.css'
-const VIDEO_PATH = 'https://www.youtube.com/watch?v=-kLuguIOmWU';
+const VIDEO_PATH = ['https://www.youtube.com/watch?v=-kLuguIOmWU',
+    'https://www.youtube.com/shorts/_wkOxk9ase4',
+    'https://www.youtube.com/watch?v=2kBwdqXOkAw',
+    'https://www.youtube.com/watch?v=1wW0MUjqU7M',
+    'https://www.youtube.com/watch?v=qnBprl_Vl7Y',
+]
 
+const getRandomVideo = () => VIDEO_PATH[Math.floor(Math.random() * VIDEO_PATH.length)];
 
 
 function Couple() {
@@ -26,7 +32,7 @@ function Couple() {
                     src="https://annapimenta.pl/wp-content/uploads/2019/09/Where_to_buy_an_engagement_ring_in_Cracow_photographer_surprise_proposal-9-1000x550.jpg"
                 />
                 <div className='collection'>
-                    <ReactPlayer className='player' ref={playerRef} url={VIDEO_PATH} controls={true} />
+                    <ReactPlayer className='player' ref={playerRef} url={getRandomVideo()} controls={true} />
                     <div className='heading'>
                     <h2 class="rainbow-text">{message}</h2>
                     </div>
